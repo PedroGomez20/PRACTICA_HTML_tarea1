@@ -1,0 +1,40 @@
+.table1 {
+    /* width: 500px; */
+    font: normal 13px Arial;
+    text-align: center;
+    border-collapse: collapse;
+
+    width: 420px;
+
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    font-family: 'Arial';
+
+}
+
+.table1,
+th,
+td {
+    border: 1px solid black;
+}
+
+
+.titulos {
+    background-color: bisque;
+}
+
+.celdas {
+    background-color: azure;
+}
+
+.encabezado{
+    text-align: center;
+    font-size: 35px;
+    color: brown;
+}
+
+.cuerpo_fondo{
+    background-color: aqua;
+}
