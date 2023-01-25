@@ -1,6 +1,9 @@
 
     h1{
         padding: 10px;
+        margin-top: 30px;
+        margin-left: 60px;
+        
     }
 
 p {
@@ -12,4 +15,40 @@ form{
     padding: 10px;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form_alum{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+}
+
+.form_alum .nomb{
+    padding-left: 50px;
+    color: gold;
+    font-size: 30px;
+}
+
+
+.form_alum .terminos2{
+    padding-left: 50px;
+    color: brown;
+}
+.form_alum .links{
+    padding-left: 88px;
+    color: brown;
+}
+
+.botns{
+
+}
 
