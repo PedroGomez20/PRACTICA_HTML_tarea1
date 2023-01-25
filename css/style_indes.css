@@ -1,3 +1,12 @@
-.cuerpo{
-    content: normal;
+.fondo{
+    background-color: aqua;
 }
+
+.cuerpo{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
