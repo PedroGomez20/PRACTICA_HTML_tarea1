@@ -1,0 +1,35 @@
+
+form{
+    padding: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+._fom_login{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+}
+
+._fom_login .ingre{
+    padding-left: 50px;
+    color: gold;
+    font-size: 30px;
+}
+
+.links {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.fondo{
+    background-color: aqua;
+}
