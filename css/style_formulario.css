@@ -1,27 +1,35 @@
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
 
-    h1{
-        padding: 10px;
-        margin-top: 30px;
-        margin-left: 60px;
-        
-    }
+
+.titulo {
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 60px;
+
+}
 
 p {
     padding: 1px;
 
 }
 
-form{
+form {
     padding: 10px;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.form_alum{
+.form_alum {
     width: 400px;
     background: #24303c;
     padding: 30px;
@@ -32,23 +40,24 @@ form{
     color: white;
 }
 
-.form_alum .nomb{
+.form_alum .nomb {
     padding-left: 50px;
     color: gold;
     font-size: 30px;
 }
 
 
-.form_alum .terminos2{
+.form_alum .terminos2 {
     padding-left: 50px;
     color: brown;
 }
-.form_alum .links{
+
+.form_alum .links {
     padding-left: 88px;
     color: brown;
 }
 
-.form_alum .botns{
+.form_alum .botns {
     width: 100%;
     background: #1f53c5;
     border: none;
@@ -58,8 +67,71 @@ form{
     font-size: 16px;
 }
 
-.cabez{
+.cabez {
     padding-top: 20px;
     padding-left: 50px;
 }
 
+@media screen and (max-width: 400px) {
+
+    .titulo {
+        font-size: 25px;
+        margin-left: 30px;
+        padding: 5px;
+        text-align: left;
+
+    }
+    .men{
+        text-decoration: none;
+    }
+    
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 700,
+      'GRAD' 0,
+      'opsz' 48
+    }
+    
+
+    .indi{
+
+        font-size: 20px;
+    }
+
+    .cabez{
+        display: inline-flex;
+        flex-direction: row;
+    }
+
+    .form_alum{
+        width: 350px;
+    background: #24303c;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 6px;
+    font-family: 'calibri';
+    color: white;
+    }
+
+    .form_alum> .nomb{
+        padding-left: 0px;
+        text-align: center;
+        color: gold;
+        font-size: 30px;
+    }
+
+    .control{
+
+        width: 145px;
+        height: 25px;
+    }
+
+.piepag{
+
+    margin-top: 40px;
+}
+
+
+}
