@@ -6,7 +6,10 @@
         'opsz' 48
 }
 
-
+.men{
+    text-decoration: none;
+    color: black;
+}
 .titulo {
     padding: 10px;
     margin-top: 30px;

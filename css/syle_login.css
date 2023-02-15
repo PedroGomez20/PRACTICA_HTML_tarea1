@@ -1,15 +1,18 @@
-
-form{
+form {
     padding: 10px;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-._fom_login{
+.lin ,.men{
+    margin: 10px;
+    color: black;
+    text-decoration-line: none;
+}
+._fom_login {
     width: 400px;
     background: #24303c;
     padding: 30px;
@@ -20,7 +23,7 @@ form{
     color: white;
 }
 
-._fom_login .ingre{
+._fom_login .ingre {
     padding-left: 50px;
     color: gold;
     font-size: 30px;
@@ -30,6 +33,58 @@ form{
     padding-top: 20px;
     padding-left: 50px;
 }
-.fondo{
+
+.fondo {
     background-color: aqua;
+}
+.bu {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+    ._fom_login {
+        width: 350px;
+        background: #24303c;
+        padding: 30px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 4px;
+        font-family: 'calibri';
+        color: white;
+    }
+    .loginacc{
+        height: 25px;
+    }
+
+    ._fom_login>.ingre {
+        padding-left: 25px;
+    }
+
+
+    form {
+        padding: 5px;
+    }
+
+    .botns{
+        width: 70px;
+        height: 25px;
+    }
+
+    .lin ,.men{
+        margin: 10px;
+        color: black;
+        text-decoration-line: none;
+    }
+    .bu {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+
+    }
 }

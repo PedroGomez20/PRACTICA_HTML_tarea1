@@ -1,0 +1,77 @@
+
+.men{
+    margin: 10px;
+    color: blue;
+    text-decoration-line: none;
+}
+
+.titulo1{
+   text-align: center;
+}
+
+.parrafo{
+    font-size: 20px;
+}
+
+.piedepagina{
+    margin-top: 50px;
+}
+
+.lin{
+    margin: 10px;
+    color: black;
+    text-decoration-line: none;
+}
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+@media screen and (max-width: 400px) {
+
+    .men{
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    .titulo1{
+        text-align: center;
+
+
+    }
+
+    .sub{
+        font-size: 20px;
+
+    }
+
+    .tipo{
+        font-size: 14px;
+    }
+
+    .imgtel{
+
+        width: 355px;
+    }
+    .parrafo{
+        font-size: 19px;
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+    
+
+    .imgbenito{
+        width: 355px;
+    }
+
+
+}
+
+

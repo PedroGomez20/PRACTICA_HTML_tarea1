@@ -14,6 +14,12 @@
 
 }
 
+.lin ,.men{
+    margin: 10px;
+    color: black;
+    text-decoration-line: none;
+}
+
 .table1,
 th,
 td {
@@ -37,4 +43,50 @@ td {
 
 .cuerpo_fondo{
     background-color: aqua;
+}
+
+@media screen and (max-width: 400px) {
+
+
+    .encabezado{
+        text-align: center;
+    }
+
+    .table1 {
+        /* width: 500px; */
+        font: normal 14px Arial;
+        text-align: center;
+        border-collapse: collapse;
+    
+        width: 425px;
+    
+        
+        /* margin: auto; */
+        /* padding: 10px; */
+       margin-left: 10px;
+       margin-right: 1opx;
+        margin-top: 50px;
+        padding-right: 50px;
+        padding-left: 19px;
+        border-radius: 4px;
+        font-family: 'Arial';
+    
+    }
+
+    .lin ,.men{
+        margin: 10px;
+        color: black;
+        text-decoration-line: none;
+    }
+    .table1,
+    th,
+    td {
+        border: 1px solid black;
+
+    }
+
+
+
+
+    
 }
