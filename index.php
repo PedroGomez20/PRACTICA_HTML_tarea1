@@ -15,7 +15,7 @@
 
 <body class="fondo">
 
-    <section class="cuerpo">
+    <section class="cuerpo"> 
     <h1>MENU</h1>
 
     <a href="blog.html"> <span class="material-symbols-outlined">

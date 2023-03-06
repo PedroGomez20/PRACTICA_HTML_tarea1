@@ -18,7 +18,7 @@
     <section>
 
 
-        <p class="indi"><a class="men" href="index.html"><span class="material-symbols-outlined">
+        <p class="indi"><a class="men" href="index.php"><span class="material-symbols-outlined">
             home
          </span>  INICIO</a></p>
 
