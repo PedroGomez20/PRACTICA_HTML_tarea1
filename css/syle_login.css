@@ -29,10 +29,10 @@ form {
     font-size: 30px;
 }
 
-.links {
+/* .links {
     padding-top: 20px;
     padding-left: 50px;
-}
+} */
 
 .fondo {
     background-color: aqua;
@@ -42,6 +42,12 @@ form {
     flex-direction: column;
     align-items: end;
 
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 

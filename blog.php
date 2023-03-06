@@ -22,6 +22,9 @@
             home
          </span>  INICIO</a></p>
 
+         <p class="indi"><a class="men" href="logout.php"><span class="material-symbols-outlined">
+logout
+</span>  CERRAR SESION</a></p>
         <!-- <ul>
             <li > <a href="index.html"> INICIO</a> </li>
 

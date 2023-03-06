@@ -1,3 +1,16 @@
+<?php
+
+include("connect.php");
+// $user_id = $_POST["user_id"];
+$sql = "SELECT * from formulario " ;
+$query = mysqli_query($conn, $sql);
+if (!$row = mysqli_fetch_object($query)) {
+    echo "Usuario no existe<br>";
+    echo "<a href='index.php'>Regresar</a>";
+    exit();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,10 +31,13 @@
 
     <section>
 
-        <p class="indi"><a class="men" href="index.html"><span class="material-symbols-outlined">
-            home
-         </span>  INICIO</a></p>
+        <p class="indi"><a class="men" href="index.php"><span class="material-symbols-outlined">
+                    home
+                </span> INICIO</a></p>
 
+                <p class="indi"><a class="men" href="logout.php"><span class="material-symbols-outlined">
+logout
+</span>  CERRAR SESION</a></p>
         <!-- <ul>
             <li> <a href="index.html"> MENU</a> </li>
 
@@ -51,98 +67,37 @@
 
 
             <tbody class="celdas">
+                <?php
+
+                if ($conn = mysqli_connect("localhost", "root", "", "form_beca")) {
+                    $query = mysqli_query($conn, "SELECT * FROM formulario");
+                    while ($row = mysqli_fetch_object($query)) {
+
+                        echo "<tr><td> {$row->nombre}</td><td> {$row->apellidop}</td><td> {$row->apellidom}</td> <td> {$row->semestre}</td> <td> {$row->calificacion}</td> <td> {$row->correo}</td>
+                        <td>
+                         <form method='POST' action='delete_user.php'><button type='submit'>Borrar</button>
+                         <input type='hidden' name='user_id' value='" . $row->id . "'/></form>
+                         <form method='POST' action='show_user.php'>
+                         <input type='hidden' name='user_id' value='" . $row->id . "'>
+                         <button type='submit'>Editar</button>
+                         </form>
+        </td>
+
+        </tr>";
+                    }
+                }else {
+                    echo "no se pudo conectar";
+                }
+                ?>
 
 
-                <tr>
-                    <td>PEDRO</td>
-                    <td>GOMEZ</td>
-                    <td>CORDOVA</td>
-                    <td>6</td>
-                    <td>97</td>
-                    <td>portg099@gmail.com</td>
 
-                </tr>
-                <tr>
-                    <td>JUAN</td>
-                    <td>PEREZ</td>
-                    <td>LOPEZ</td>
-                    <td>2</td>
-                    <td>92</td>
-                    <td>iytr9@gmail.com</td>
 
-                </tr>
-                <tr>
-                    <td>ALAN</td>
-                    <td>PEREZ</td>
-                    <td>PERZ</td>
-                    <td>6</td>
-                    <td>94</td>
-                    <td>gdfdr45@gmail.com</td>
 
-                </tr>
-                <tr>
-                    <td>ESDRAS</td>
-                    <td>LOPEZ</td>
-                    <td>HERNANDEZ</td>
-                    <td>5</td>
-                    <td>98</td>
-                    <td>gdodt51@gmail.com</td>
 
-                </tr>
-                <tr>
-                    <td>KEVIN</td>
-                    <td>SILVA</td>
-                    <td>RIVERA</td>
-                    <td>7</td>
-                    <td>96</td>
-                    <td>yadbsda@gmail.com</td>
 
-                </tr>
-                <tr>
-                    <td>JIMENA</td>
-                    <td>ORTEGA</td>
-                    <td>LOPEZ</td>
-                    <td>8</td>
-                    <td>97</td>
-                   <td> hdhdh@gmail.com</td>
 
-                </tr>
-                <tr>
-                    <td>MARIA</td>
-                    <td>HERNANDEZ</td>
-                    <td>CORDOVA</td>
-                    <td>6</td>
-                    <td>97</td>
-                    <td>ffgastt@gmail.com</td>
 
-                </tr>
-                <tr>
-                    <td>RAMON</td>
-                    <td>GOMEZ</td>
-                    <td>CORDOVA</td>
-                    <td>6</td>
-                    <td>97</td>
-                    <td>sgdga@gmail.com</td>
-
-                </tr>
-                <tr>
-                    <td>ALAM</td>
-                    <td>GOMEZ</td>
-                    <td>SILVA</td>
-                    <td>6</td>
-                    <td>97</td>
-                    <td>ggdfar@gmail.com</td>
-
-                </tr>
-                <tr>
-                    <td>JAIME</td>
-                    <td>PEREZ</td>
-                    <td>CORDOVA</td>
-                    <td>6</td>
-                    <td>97</td>
-                    <td>jjdjdj@gmail.com</td>
-
-                </tr>
 
 
 

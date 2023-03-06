@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if (!isset ($_SESSION["logged"])){
+        header("Location: login.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,26 +21,30 @@
 </head>
 
 <body class="fondo">
-
+<section>
+<p class="indi"><a class="men" href="logout.php"><span class="material-symbols-outlined">
+logout
+</span>  CERRAR SESION</a></p>
+</section>
     <section class="cuerpo"> 
     <h1>MENU</h1>
 
-    <a href="blog.html"> <span class="material-symbols-outlined">
+    <a href="blog.php"> <span class="material-symbols-outlined">
         rss_feed
         </span>BLOG DE BECAS</a>
     <br>
     <br>
-    <a href="formulario.html"> <span class="material-symbols-outlined">
+    <a href="formulario.php"> <span class="material-symbols-outlined">
         edit
         </span>REGISTRO DE ALUMNOS INTERESADOS</a>
     <br>
     <br>
-    <a href="alumnos.html"> <span class="material-symbols-outlined">
+    <a href="alumnos.php"> <span class="material-symbols-outlined">
         dataset
         </span>REGISTROS</a>
     <br>
     <br>
-    <a href="login.html"> <span class="material-symbols-outlined">
+    <a href="login.php"> <span class="material-symbols-outlined">
         account_circle
         </span>LOGIN</a>
 </section>

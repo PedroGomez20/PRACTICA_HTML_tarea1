@@ -1,3 +1,10 @@
+
+<?php
+    session_start();
+    if (!isset($_SESSION["logged"])){
+        header("Location: login.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,11 +23,13 @@
     
     <section class="cabez">
        
-        <p class="indi"><a class="men" href="index.html"><span class="material-symbols-outlined">
+        <p class="indi"><a class="men" href="index.php"><span class="material-symbols-outlined">
             home
          </span>  INICIO</a></p>
 
-
+         <p class="indi"><a class="men" href="logout.php"><span class="material-symbols-outlined">
+logout
+</span>  CERRAR SESION</a></p>
         
         <!-- <ul>
             <li class="menus"> <a href="index.html"> MENU</a> </li>
@@ -38,7 +47,7 @@
 
         <P class="nomb">DATOS PERSONALES</P>
 
-        <form action="/alumnos.html" method="post">
+        <form action="save.php" method="POST">
             <label for="nombre">NOMBRE:</label>
             <input class="control" type="text" id="nombre" name="nombre" placeholder="Nombre" />
             <br>
