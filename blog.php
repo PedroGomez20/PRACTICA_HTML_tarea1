@@ -15,26 +15,33 @@
 
 <body bgcolor="aqua">
 
-    <section>
+    <section class="ens">
 
 
-        <p class="indi"><a class="men" href="index.php"><span class="material-symbols-outlined">
-            home
-         </span>  INICIO</a></p>
+        <a class="men" href="index.php"><span class="material-symbols-outlined">
+                home
+            </span> INICIO</a>
 
-         <p class="indi"><a class="men" href="logout.php"><span class="material-symbols-outlined">
-logout
-</span>  CERRAR SESION</a></p>
-        <!-- <ul>
-            <li > <a href="index.html"> INICIO</a> </li>
+        <a class="men" href="logout.php"><span class="material-symbols-outlined">
+                logout
+            </span> CERRAR SESION</a>
 
+
+        <!-- <ul class="logotipos">
+            <li class="logotipos"> <a class="logotipos" href="index.php"><span class="material-symbols-outlined">
+                        home
+                    </span> INICIO</a> </li>
+
+            <li class="logotipos" > <a class="logotipos" href="logout.php"><span class="material-symbols-outlined">
+                logout
+            </span> CERRAR SESION</a></li>
         </ul> -->
 
-    </section> 
+    </section>
 
     <header>
-        <h1  class="titulo1" id="titulo">BECAS DISPONIBLES PARA UNIVERSITARIOS</h1>
-    </header> 
+        <h1 class="titulo1" id="titulo">BECAS DISPONIBLES PARA UNIVERSITARIOS</h1>
+    </header>
     <br>
 
     <!--<div >es igual al section es una divicion es mejor section
@@ -48,14 +55,14 @@ logout
             <img class="imgtel" src="imagen/inicial.jpg" width="400px">
             <p class="parrafo">Esta beca esta dirijida para los estidiantes de universidad publicas o privadas, ofrece un apoyo economico de 1500 mensuales mas equipo electronico</p>
         </article>
-<br>
+        <br>
         <article class="post">
             <h2 class="sub">BECA BENITO JUAREZ (GOBIERNO) </h2>
             <p>JOVENES ESCRIBIENDO EL FUTURO</p>
             <img class="imgtel" src="imagen/JEF1.png" width="400px">
-            <p class="parrafo">Estas beca esta dirijida para escuelas publicas en lugares con ciertos criterios es un apoyo 2850 mensual que se paga de manera bimestral  </p>
+            <p class="parrafo">Estas beca esta dirijida para escuelas publicas en lugares con ciertos criterios es un apoyo 2850 mensual que se paga de manera bimestral </p>
         </article>
-<br>
+        <br>
         <article class="post">
             <h2 class="sub">BECA BBVA </h2>
             <p>ESCUELAS PUBLICAS Y PRIVADAS </p>
@@ -68,14 +75,14 @@ logout
     <footer class="piedepagina"> <!--pie de pagina-->
 
         <a class="lin" href="#titulo"><span class="material-symbols-outlined">
-            arrow_upward
+                arrow_upward
             </span>SUBIR</a>
 
-            <a class="lin"  class="correoo" href="prgc105@gmail.com"> <span class="material-symbols-outlined">
+        <a class="lin" class="correoo" href="prgc105@gmail.com"> <span class="material-symbols-outlined">
                 mail
-                </span> CORREO</a>
+            </span> CORREO</a>
 
-    </footer> 
+    </footer>
 </body>
 
 </html>

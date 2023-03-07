@@ -23,13 +23,13 @@
     
     <section class="cabez">
        
-        <p class="indi"><a class="men" href="index.php"><span class="material-symbols-outlined">
-            home
-         </span>  INICIO</a></p>
+    <a class="men" href="index.php"><span class="material-symbols-outlined">
+                home
+            </span> INICIO</a>
 
-         <p class="indi"><a class="men" href="logout.php"><span class="material-symbols-outlined">
-logout
-</span>  CERRAR SESION</a></p>
+        <a class="men" href="logout.php"><span class="material-symbols-outlined">
+                logout
+            </span> CERRAR SESION</a>
         
         <!-- <ul>
             <li class="menus"> <a href="index.html"> MENU</a> </li>

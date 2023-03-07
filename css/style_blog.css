@@ -23,6 +23,16 @@
     text-decoration-line: none;
 }
 
+.li{
+    display: flex;
+    flex-direction: row;
+}
+
+.logotipos {
+    list-style-type: none;
+}
+
+
 
 
 .material-symbols-outlined {
