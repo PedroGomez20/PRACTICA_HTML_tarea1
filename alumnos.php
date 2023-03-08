@@ -75,11 +75,16 @@ logout
 
                         echo "<tr><td> {$row->nombre}</td><td> {$row->apellidop}</td><td> {$row->apellidom}</td> <td> {$row->semestre}</td> <td> {$row->calificacion}</td> <td> {$row->correo}</td>
                         <td>
-                         <form method='POST' action='delete_user.php'><button type='submit'>Borrar</button>
+                         <form method='POST' action='delete_user.php'>
+                         <button type='submit'> <span class='material-symbols-outlined'>
+                         delete
+                         </span> Borrar</button>
                          <input type='hidden' name='user_id' value='" . $row->id . "'/></form>
                          <form method='POST' action='show_user.php'>
                          <input type='hidden' name='user_id' value='" . $row->id . "'>
-                         <button type='submit'>Editar</button>
+                         <button type='submit'> <span class='material-symbols-outlined'>
+                         edit
+                         </span> Editar</button>
                          </form>
         </td>
 

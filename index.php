@@ -65,7 +65,7 @@ if (!isset($_SESSION["logged"])) {
             </span>REGISTROS</a>
         <br>
         <br>
-        <a href="login.php"> <span class="material-symbols-outlined">
+        <a href="login_new/new_login.php"> <span class="material-symbols-outlined">
                 account_circle
             </span>LOGIN</a>
     </section>
