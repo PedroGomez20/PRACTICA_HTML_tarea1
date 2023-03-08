@@ -2,7 +2,7 @@
 
 include("connect.php");
 // $user_id = $_POST["user_id"];
-$sql = "SELECT * from formulario " ;
+$sql = "SELECT * from formulario ";
 $query = mysqli_query($conn, $sql);
 if (!$row = mysqli_fetch_object($query)) {
     echo "Usuario no existe<br>";
@@ -35,9 +35,9 @@ if (!$row = mysqli_fetch_object($query)) {
                     home
                 </span> INICIO</a></p>
 
-                <p class="indi"><a class="men" href="logout.php"><span class="material-symbols-outlined">
-logout
-</span>  CERRAR SESION</a></p>
+        <p class="indi"><a class="men" href="logout.php"><span class="material-symbols-outlined">
+                    logout
+                </span> CERRAR SESION</a></p>
         <!-- <ul>
             <li> <a href="index.html"> MENU</a> </li>
 
@@ -75,22 +75,27 @@ logout
 
                         echo "<tr><td> {$row->nombre}</td><td> {$row->apellidop}</td><td> {$row->apellidom}</td> <td> {$row->semestre}</td> <td> {$row->calificacion}</td> <td> {$row->correo}</td>
                         <td>
-                         <form method='POST' action='delete_user.php'>
-                         <button type='submit'> <span class='material-symbols-outlined'>
-                         delete
-                         </span> Borrar</button>
-                         <input type='hidden' name='user_id' value='" . $row->id . "'/></form>
-                         <form method='POST' action='show_user.php'>
-                         <input type='hidden' name='user_id' value='" . $row->id . "'>
-                         <button type='submit'> <span class='material-symbols-outlined'>
-                         edit
-                         </span> Editar</button>
-                         </form>
+                         <form method='POST' action='delete_user.php'> 
+        
+        <button type='submit'> <span class='material-symbols-outlined'>
+        delete
+        </span> Borrar  </button>
+        
+        <input type='hidden' name='user_id' value='" . $row->id . "'/></form>
+        
+        <form method='POST' action='show_user.php'>
+        <input type='hidden' name='user_id' value='" . $row->id . "'>
+
+        <button type='submit'><span class='material-symbols-outlined'>
+        edit
+        </span>  Editar</button>
+
+        </form>
         </td>
 
         </tr>";
                     }
-                }else {
+                } else {
                     echo "no se pudo conectar";
                 }
                 ?>
