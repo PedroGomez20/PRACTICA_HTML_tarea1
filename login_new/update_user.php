@@ -5,8 +5,12 @@
     $username = $_POST["user"];
     $password = $_POST["password"];
 
+    $password = md5($password."cursophp");
+
     $sql = "UPDATE login set 
     nombre = '".$name."', usuario='".$username."', contra='".$password."' where id=".$user_id;
+
+    
     if ($query = mysqli_query($conn, $sql))
         header("Location: ../index.php");
     else{
